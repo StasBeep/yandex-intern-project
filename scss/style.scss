@@ -1,0 +1,57 @@
+@import "./variables";
+@import "./fonts";
+@import "./mix";
+
+.wrapper {
+    padding: $wrapper-padding;
+    background-color: $background-white;
+    width: 607px;
+    height: 291px;
+    // центрирование карточи со списком (не обязательно)
+    margin: 0 auto;
+}
+
+.title {
+    @include font();
+    font-size: 18px;
+    line-height: 22px;
+    color: $text-color;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.cards {
+    list-style-type: none;
+    display: flex;
+    padding: $wrapper-padding;
+    margin: 0;
+}
+
+.card {
+    background-color: #f8f8f8;
+    margin-right: 16px;
+    padding: $wrapper-padding;
+    border-radius: 24px;
+
+    &-img {
+        width: 149px;
+        height: 138px;
+        background-color: #c4c4c4;
+        border-radius: 16px;
+        margin-bottom: 16px;
+    }
+
+    &-btn {
+        @include font();
+        font-size: 12px;
+        line-height: 15px;
+        color: $text-color;
+        padding: 10px 54px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
