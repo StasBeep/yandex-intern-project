@@ -55,3 +55,31 @@
         margin-right: 0;
     }
 }
+
+/*~~~~~~~~Газета~~~~~~~~~~~*/
+
+* {
+    margin: 0;
+}
+
+.root {
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.el {
+    display: inline;
+    font-size: 25px;
+    background-color: #d0d3a4;
+    border: 2px solid #e2b900;
+    display: inline-block;
+    height: auto;
+
+    &:nth-child(2) {
+
+    }
+}
+
+/*~~~end~~~Газета~~~~end~~~~*/

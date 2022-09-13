@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: inter;
   src: url(../fonts/inter-regular.otf);
@@ -63,4 +64,30 @@
 .card:last-child {
   margin-right: 0;
 }
+
+/*~~~~~~~~Газета~~~~~~~~~~~*/
+* {
+  margin: 0;
+}
+
+.root {
+  margin: 0 auto;
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.el {
+  display: inline;
+  font-size: 25px;
+  background-color: #d0d3a4;
+  border: 2px solid #e2b900;
+  display: inline-block;
+  height: auto;
+}
+
+/*~~~end~~~Газета~~~~end~~~~*/
 /*# sourceMappingURL=style.css.map */
